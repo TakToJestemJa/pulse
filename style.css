@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #eafaf1;
+}
+
+nav {
+    width: 60%;
+    margin: auto;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+.logo {
+    font-size: 40px;
+    color: #00ad6a;
+    font-weight: bolder;
+}
+
+.menu>a {
+    text-decoration: none;
+    color: #00ad6a;
+    padding: 20px;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+.btn {
+    padding: 10px 20px;
+    color: #00ad6a;
+    border: 2px solid #00ad6a;
+    font-weight: bolder;
+    font-size: 15px;
+    background-color: #eafaf1;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+.btn:hover::before {
+    content: '';
+    border: 5px solid #00ad6a;
+    position: absolute;
+    padding: 18px 45px;
+    border-top: 0;
+    border-right: 0;
+    left: -5px;
+    top: 2px;
+    z-index: -1;
+}
+
+.btn:hover {
+    transform: translateY(-3px) translateX(3px);
+}
